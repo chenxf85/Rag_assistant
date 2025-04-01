@@ -1,0 +1,60 @@
+2025-03-20 01:02:06,462 - root - ERROR - chat_process发生错误：
+Traceback (most recent call last):
+  File "B:\notebook\Rag_Assistant\project\serve\run_gradio.py", line 179, in respond
+    bot_message = get_completion(
+  File "B:\notebook\Rag_Assistant\project\llm\call_llm.py", line 68, in get_completion
+    api_key = parse_llm_api_key(type,model)
+  File "B:\notebook\Rag_Assistant\project\llm\call_llm.py", line 118, in parse_llm_api_key
+    return env_file[type + "_API_KEY"]
+TypeError: string indices must be integers
+-respond
+2025-03-20 01:02:07,058 - root - ERROR - chat_process发生错误：
+Traceback (most recent call last):
+  File "B:\notebook\Rag_Assistant\project\serve\run_gradio.py", line 179, in respond
+    bot_message = get_completion(
+  File "B:\notebook\Rag_Assistant\project\llm\call_llm.py", line 68, in get_completion
+    api_key = parse_llm_api_key(type,model)
+  File "B:\notebook\Rag_Assistant\project\llm\call_llm.py", line 118, in parse_llm_api_key
+    return env_file[type + "_API_KEY"]
+TypeError: string indices must be integers
+-respond
+2025-03-20 01:15:34,042 - root - ERROR - chat_process发生错误：
+Traceback (most recent call last):
+  File "B:\notebook\Rag_Assistant\project\serve\run_gradio.py", line 179, in respond
+    bot_message = get_completion(
+  File "B:\notebook\Rag_Assistant\project\llm\call_llm.py", line 74, in get_completion
+    return get_completion_openai(prompt, model, temperature, api_key, max_tokens,api_base)
+  File "B:\notebook\Rag_Assistant\project\llm\call_llm.py", line 82, in get_completion_openai
+    response = client.chat.completions.create(
+  File "D:\Anaconda\lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+  File "D:\Anaconda\lib\site-packages\openai\resources\chat\completions\completions.py", line 879, in create
+    return self._post(
+  File "D:\Anaconda\lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "D:\Anaconda\lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+  File "D:\Anaconda\lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': 'invalid param model:generalv1.1 (sid: cha000b90da@dx195af673f4a9a4b532)', 'type': 'invalid_request_error', 'param': None, 'code': '10005'}}
+-respond
+2025-03-20 01:16:56,375 - root - ERROR - chat_process发生错误：
+Traceback (most recent call last):
+  File "B:\notebook\Rag_Assistant\project\serve\run_gradio.py", line 179, in respond
+    bot_message = get_completion(
+  File "B:\notebook\Rag_Assistant\project\llm\call_llm.py", line 74, in get_completion
+    return get_completion_openai(prompt, model, temperature, api_key, max_tokens,api_base)
+  File "B:\notebook\Rag_Assistant\project\llm\call_llm.py", line 82, in get_completion_openai
+    response = client.chat.completions.create(
+  File "D:\Anaconda\lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+  File "D:\Anaconda\lib\site-packages\openai\resources\chat\completions\completions.py", line 879, in create
+    return self._post(
+  File "D:\Anaconda\lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "D:\Anaconda\lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+  File "D:\Anaconda\lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.APIStatusError: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+-respond

@@ -1,0 +1,60 @@
+2025-03-25 20:34:07,370 - root - ERROR - 游客登录发生错误：
+Traceback (most recent call last):
+  File "B:\notebook\Rag_Assistant\project\user\log_in.py", line 47, in guest_login
+    state["logged_in"] = True
+TypeError: 'str' object does not support item assignment
+-guest_login
+2025-03-25 20:34:48,372 - root - ERROR - 游客登录发生错误：
+Traceback (most recent call last):
+  File "B:\notebook\Rag_Assistant\project\user\log_in.py", line 47, in guest_login
+    state["logged_in"] = True
+TypeError: 'str' object does not support item assignment
+-guest_login
+2025-03-26 12:05:06,121 - root - ERROR - 注册发生错误：
+Traceback (most recent call last):
+  File "B:\notebook\Rag_Assistant\project\user\sign_up.py", line 38, in register
+    users = load_users()
+  File "B:\notebook\Rag_Assistant\project\user\sign_up.py", line 19, in load_users
+    return json.load(f)
+  File "D:\Anaconda\lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "D:\Anaconda\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "D:\Anaconda\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Anaconda\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+-register
+2025-03-26 12:05:34,217 - root - ERROR - 注册发生错误：
+Traceback (most recent call last):
+  File "B:\notebook\Rag_Assistant\project\user\sign_up.py", line 38, in register
+    users = load_users()
+  File "B:\notebook\Rag_Assistant\project\user\sign_up.py", line 19, in load_users
+    return json.load(f)
+  File "D:\Anaconda\lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "D:\Anaconda\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "D:\Anaconda\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Anaconda\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+-register
+2025-03-26 12:14:29,392 - root - ERROR - 注册发生错误：
+Traceback (most recent call last):
+  File "B:\notebook\Rag_Assistant\project\user\sign_up.py", line 38, in register
+    users = load_users()
+  File "B:\notebook\Rag_Assistant\project\user\sign_up.py", line 19, in load_users
+    return json.load(f)
+  File "D:\Anaconda\lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "D:\Anaconda\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "D:\Anaconda\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Anaconda\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+-register
